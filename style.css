@@ -1,6 +1,10 @@
 /*
   <link rel="stylesheet" href="styles1.css" />
 */
+
+/*
+  Thank you so much Eddie for making this css file :3
+*/
 p {
   color: red;
 }
@@ -10,21 +14,52 @@ h1, h2, h3, h4, h5, h6, p{
 .body {
   display: flex;
   gap: 20px;
+
 }
 main {
   text-align: center;
   flex: 5;
 }
 aside {
-  flex: 1;
+  flex-basis: clamp(225px, 20%, 275px);
   padding: 0px;
+  left: 0px;
   border-right: 1px solid black;
+  transition: transform .2s linear;
 }
+aside.is-open {
+  transform: translateX(-100%);
+}
+/* Animation: mostly self-explanatory (might need to edit later to include links to other sites) */
 .box {
-  border-top: 1px solid black;
   border-bottom: 1px solid black;
   padding: 1px;
   text-align: center;
+  background-color: white;
+  transition: background-color .2s linear;
+  cursor: pointer;
+}
+.box:hover {
+  background-color: lightgray;
+}
+
+/* 
+  Okay so what's going to happen here is that I'm going to make a button that appears 
+  when the page is small enough and when you click it, it will overlay the menu over the 
+  page but when the page is big enough, the sidebar would occur without the button being there
+*/
+.menuButton {
+  font-size: xx-large;
+  border: 0px;
+  background-color: white;
+  transition: background-color .2s linear;
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  left: calc(clamp(225px, 20%, 275px) + 15px);
+}
+.menuButton:hover {
+  background-color: lightgray;
 }
 side-thing {
   color: black;
