@@ -4,8 +4,21 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
+  <!-- Umm someone should make a js file too lol idk how to do this stuff :pp -->
+   <!--I give up :tongue emoji:-->
+  <script>
+    function openMenu() {
+      if (!document.getElementById("menu").classList.contains("is-open")) {
+        document.getElementById("menu").classList.add("is-open");      
+      } else {
+        document.getElementById("menu").classList.remove("is-open");
+      }
+    }
+  </script>
+
   <div class="body">
-    <aside>
+    <!-- This is the side bar (I, duck, will be working on this becuase I love animations) -->
+    <aside id = "menu">
         <div class="box">
           <side-thing>Home</side-thing>
         </div>
@@ -15,8 +28,11 @@
         <div class="box">
           <side-thing>s</side-thing>
         </div>
+        <button class="menuButton" onclick="openMenu()">
+          ☰
+        </button>
     </aside>
-    <main>  
+    <main>
       <!-- This is the actual website structure for main page -->
       <h1>ToysForAll</h1>
       <h2>Printing a better future for everyone, one toy at a time.</h2>
