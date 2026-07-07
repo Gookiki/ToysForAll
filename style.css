@@ -27,9 +27,6 @@ aside {
   border-right: 1px solid black;
   transition: transform .2s linear;
 }
-aside.is-open {
-  transform: translateX(-100%);
-}
 /* Animation: mostly self-explanatory (might need to edit later to include links to other sites) */
 .box {
   border-bottom: 1px solid black;
