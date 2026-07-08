@@ -21,7 +21,7 @@ main {
   flex: 5;
 }
 aside {
-  flex-basis: clamp(225px, 20%, 275px);
+  flex-basis: clamp(150px, 20%, 275px);
   padding: 0px;
   left: 0px;
   border-right: 1px solid black;
