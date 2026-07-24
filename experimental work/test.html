@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Single File Website</title>
+    <link rel="stylesheet" href="style.css"> <!-- Optional external styling -->
+</head>
+<body>
+
+    <div class="app-layout">
+
+        <!-- Your Always-Present Sidebar -->
+        <aside id="menu">
+        <div class="brand">
+          <div class="logo">🧸</div>
+          <div class="brand-text">
+            <h1>Toys for All</h1>
+            <h4>Printing smiles. Building futures.</h4>
+          </div>
+        </div>
+        <a id="link-home" class="sidebar-link active-link" href="#" onclick="showPage('home', event); return false;"><side-thing>Home</side-thing></a>
+        <a id="link-donate" class="sidebar-link" href="#" onclick="showPage('donate', event); return false;"><side-thing>Donate</side-thing></a>
+        <a id="link-team" class="sidebar-link" href="#" onclick="showPage('team', event); return false;"><side-thing>Meet the Team</side-thing></a>
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <h5>toysforall@gmail.com</h5>
+            <h5>516-423-3032</h5>
+        </div>
+        </aside>
+
+        <!-- Page Content Container -->
+        <main class="content-area">
+            <!-- Section 1: Home Page -->
+            <section id="home" class="page active-page">
+                <h1>Welcome to the Home Page</h1>
+                <p>This is the main landing area of the single-file site.
+                    Still testing.
+                </p>
+                <h4>Our goal: To bring children the joy of play and creativity through toys the same way as many others do, fostering imagination and happiness in every child.</h4>
+                <h4>Our mission: To ensure every child has access to toys that inspire creativity and joy, helping them grow and learn through play.</h4>
+            </section>
+
+            <!-- page 2: donate Page -->
+            <section id="donate" class="page">
+                <h1>Donate</h1>
+                <p>Support our cause and make a difference in the lives of children.</p>
+            </section>
+
+            <!-- Section 3: Team Page -->
+            <section id="team" class="page">
+                <h1>Meet the Team!</h1>
+                <p>This is where you can get in touch with us.</p>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script> <!-- JavaScript link -->
+</body>
+</html>
