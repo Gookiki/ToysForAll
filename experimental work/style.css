@@ -51,10 +51,7 @@
     overflow: hidden;
 }
 
-#menu.is-closed .sidebar-link,
-#menu.is-closed .contact,
-#menu.is-closed .logo,
-#menu.is-closed .brand-text {
+#menu.is-closed .sidebar-link,#menu.is-closed .contact,#menu.is-closed .logo,#menu.is-closed .brand-text {
     display: none;
 }
 
@@ -135,9 +132,7 @@
     transition: opacity 0.25s ease, transform 0.25s ease;
 }
 
-#menu.is-closed .brand-text,
-#menu.is-closed .sidebar-link,
-#menu.is-closed .contact {
+#menu.is-closed .brand-text,#menu.is-closed .sidebar-link,#menu.is-closed .contact {
     opacity: 0;
     pointer-events: none;
     transform: translateX(-6px);
@@ -191,13 +186,7 @@ p {
     color: black;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+h1,h2,h3,h4,h5,h6,p {
     font-family: 'Montserrat', sans-serif;
 }
 
