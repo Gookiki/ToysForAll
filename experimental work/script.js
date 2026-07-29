@@ -31,3 +31,26 @@ function showPage(pageId, event) {
     }
 }
 
+const sidebarToggle = document.getElementById('sidebar-toggle');
+const sidebarMenu = document.getElementById('menu');
+const toggleIcon = sidebarToggle ? sidebarToggle.querySelector('.toggle-icon') : null;
+
+if (sidebarToggle && sidebarMenu) {
+    sidebarToggle.addEventListener('click', () => {
+        const isClosed = sidebarMenu.classList.toggle('is-closed');
+        sidebarToggle.classList.toggle('is-active', isClosed);
+
+        if (toggleIcon) {
+            toggleIcon.textContent = isClosed ? '☰' : '☰';
+        }
+
+        sidebarToggle.classList.remove('is-popping');
+        void sidebarToggle.offsetWidth;
+        sidebarToggle.classList.add('is-popping');
+
+        window.setTimeout(() => {
+            sidebarToggle.classList.remove('is-popping');
+        }, 280);
+    });
+}
+
