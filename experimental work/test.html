@@ -37,6 +37,11 @@
                     <span style="font-family: 'Montserrat', sans-serif;">Donate</span>
                 </side-thing>
             </a>
+            <a id="link-projects" class="sidebar-link" href="#" onclick="showPage('projects', event); return false;">
+                <side-thing>
+                    <span style="font-family: 'Montserrat', sans-serif;">Projects</span>
+                </side-thing>
+            </a>
             <a id="link-team" class="sidebar-link" href="#" onclick="showPage('team', event); return false;">
                 <side-thing>
                     <span style="font-family: 'Montserrat', sans-serif;">Meet the Team</span>
@@ -51,7 +56,7 @@
 
         <!-- Page Content Container -->
         <main class="content-area">
-            <!-- Section 1: Home Page -->
+            <!-- page 1: Home Page -->
             <section id="home" class="page active-page">
                 <h1>Welcome to the Home Page</h1>
                 <p>
@@ -90,8 +95,23 @@
                 <p>Support our cause and make a difference in the lives of children.</p>
                 <p>EVERYTHING IS PLACEHOLDER!!!! BROOOOO</p>
             </section>
+            
+            <!-- page 3: Projects Page -->
+            <section id="projects" class="page">
+                <h1>Projects</h1>
+                <p>Explore our projects and see how we bring joy and creativity to children through our toys.</p>
 
-            <!-- Section 3: Team Page -->
+                <!-- Project Card  -->
+                <div class="project-card">
+                    <img class="project-image" src="https://via.placeholder.com/300x200" alt="Project preview">
+                    <div class="project-text">
+                        <h3>Project Title</h3>
+                        <p>Replace this text with your project description. This layout keeps the image on the left and the description text on the right.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- page 4: Team Page -->
             <section id="team" class="page">
                 <h1>Meet the Team!</h1>
                 <p>Each and every single one of our team members is dedicated to bringing joy and creativity to children through our toys.</p>
