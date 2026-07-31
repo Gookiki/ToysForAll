@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Single File Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Optional external styling -->
+</head>
+
+<body>
+    <div class="app-layout">
+        <!-- Your Always-Present Sidebar -->
+        <aside id="menu">
+            <div class="brand">
+                <div class="brand-header">
+                    <div class="logo">
+                        <span style="font-size: xxx-large;">🧸</span>
+                    </div>
+                    <button id="sidebar-toggle" class="sidebar-toggle" type="button" aria-label="Toggle sidebar">
+                        <span class="toggle-icon">☰</span>
+                    </button>
+                </div>
+                <div class="brand-text">
+                    <h1>Toys for All</h1>
+                    <h4>Printing smiles. Building futures.</h4>
+                </div>
+            </div>
+            <a id="link-home" class="sidebar-link active-link" href="#" onclick="showPage('home', event); return false;">
+                <side-thing>
+                    <span style="font-family: 'Montserrat', sans-serif;">Home</span>
+                </side-thing>
+            </a>
+            <a id="link-donate" class="sidebar-link" href="#" onclick="showPage('donate', event); return false;">
+                <side-thing>
+                    <span style="font-family: 'Montserrat', sans-serif;">Donate</span>
+                </side-thing>
+            </a>
+            <a id="link-projects" class="sidebar-link" href="#" onclick="showPage('projects', event); return false;">
+                <side-thing>
+                    <span style="font-family: 'Montserrat', sans-serif;">Projects</span>
+                </side-thing>
+            </a>
+            <a id="link-team" class="sidebar-link" href="#" onclick="showPage('team', event); return false;">
+                <side-thing>
+                    <span style="font-family: 'Montserrat', sans-serif;">Meet the Team</span>
+                </side-thing>
+            </a>
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <h5>Email: toysforall3d@gmail.com</h5>
+                <h5>Phone: +1 (516) 423-3032</h5>
+            </div>
+        </aside>
+
+        <!-- Page Content Container -->
+        <main class="content-area">
+            <!-- page 1: Home Page -->
+            <section id="home" class="page active-page">
+                <h1>Welcome to the Home Page</h1>
+                <p>
+                    This is the main landing area of the single-file site.
+                    Still testing.
+                </p>
+                <h4>Our goal: To bring children the joy of play and creativity through toys the same way as many others do, fostering imagination and happiness in every child.</h4>
+
+                <section class="features" id="what">
+                    <div class="feature">
+                        <div class="icon">🤝</div>
+                        <h3>Inclusive Play</h3>
+                        <p>Adaptive and accessible toys so every child can play, learn, and thrive.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="icon">🖨️</div>
+                        <h3>3D Printed</h3>
+                        <p>Using 3D printing technology, we design and build high-quality custom toys.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="icon">🏫</div>
+                        <h3>Community Focus</h3>
+                        <p>We partner with families, schools, and organizations to support children in need.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="icon">💗</div>
+                        <h3>Made with Care</h3>
+                        <p>Every toy is made with care, purpose, and the belief that every child matters.</p>
+                    </div>
+                </section>
+            </section>
+
+            <!-- page 2: donate Page -->
+            <section id="donate" class="page">
+                <h1>Donate</h1>
+                <p>Support our cause and make a difference in the lives of children.</p>
+                <p>EVERYTHING IS PLACEHOLDER!!!! BROOOOO</p>
+            </section>
+            
+            <!-- page 3: Projects Page -->
+            <section id="projects" class="page">
+                <h1>Projects</h1>
+                <p>Explore our projects and see how we bring joy and creativity to children through our toys.</p>
+
+                <!-- Project Card  -->
+                <div class="project-card">
+                    <img class="project-image" src="https://via.placeholder.com/300x200" alt="Project preview">
+                    <div class="project-text">
+                        <h3>Project Title</h3>
+                        <p>Replace this text with your project description. This layout keeps the image on the left and the description text on the right.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- page 4: Team Page -->
+            <section id="team" class="page">
+                <h1>Meet the Team!</h1>
+                <p>Each and every single one of our team members is dedicated to bringing joy and creativity to children through our toys.</p>
+                <div class="feature">
+                    <div class="icon">
+                        <span style="font-size: 20px;">Founder</span>
+                    </div>
+                    <h3>Marseille</h3>
+                    <p>Marseille is the founder of our organization, dedicated to creating toys that bring joy and creativity to children everywhere.</p>
+                </div>
+                <div class="feature">
+                    <div class="icon">
+                        <span style="font-size: 20px;">Engineer/Coder</span>
+                    </div>
+                    <h3>Eddie & Issac</h3>
+                    <p>
+                        Eddie and Issac are our engineers and coders, responsible as the web developers, ensuring that our online presence supports
+                        our mission to bring joy and creativity to children everywhere.
+                    </p>
+                </div>
+                <div class="feature">
+                    <div class="icon">
+                        <span style="font-size: 20px;">Designer</span>
+                    </div>
+                    <h3>Brandon</h3>
+                    <p>placeholder (this guy didnt do anything lmao)</p>
+                </div>
+                <div class="feature">
+                    <div class="icon">
+                        <span style="font-size: 20px;">Marketing</span>
+                    </div>
+                    <h3>Tahim</h3>
+                    <p>Placeholder (this guy doesn't get a role yet)</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- JavaScript link -->
+    <script src="script.js"></script>
+</body>
+</html>
