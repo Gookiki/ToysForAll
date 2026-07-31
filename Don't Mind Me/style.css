@@ -43,8 +43,8 @@ html,body{height:100%;margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color
 .feature .icon{font-size:28px;margin-bottom:8px}
 
 .mission,.team{margin-top:28px;background:#fff;padding:18px;border-radius:12px;box-shadow:var(--shadow)}
-.team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:12px}
-.member{background:var(--muted);padding:12px;border-radius:8px;text-align:left;cursor:pointer;transition:transform .18s ease,box-shadow .18s ease}
+.team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:12px}
+ .member{background:var(--muted);padding:12px;border-radius:8px;text-align:left;cursor:pointer;transition:transform .18s ease,box-shadow .18s ease;display:block;color:inherit;text-decoration:none}
 .member:hover{transform:translateY(-4px);box-shadow:0 10px 30px rgba(18,30,50,0.08)}
 
 .member .member-head{display:flex;align-items:center;gap:12px}
@@ -78,10 +78,7 @@ html,body{height:100%;margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color
 .page-hero{background:linear-gradient(90deg,rgba(31,135,255,0.06),rgba(255,107,107,0.03));padding:22px;border-radius:12px;display:flex;gap:18px;align-items:center}
 .page-hero .icon{font-size:44px;padding:12px;background:#fff;border-radius:10px;box-shadow:var(--shadow)}
 .page-hero .title{font-size:22px;margin:0}
-.page-content{margin-top:18px;display:grid;grid-template-columns:1fr 320px;gap:18px}
-.card{background:#fff;padding:16px;border-radius:12px;box-shadow:var(--shadow)}
-.decor-accent{height:6px;width:80px;background:var(--accent);border-radius:6px;margin-top:8px}
-
+ .page-content{margin-top:18px;display:grid;grid-template-columns:minmax(320px,1fr) 280px;gap:18px}
 /* Team profile */
 .profile{display:flex;gap:16px;align-items:center}
 .portrait{width:120px;height:120px;border-radius:12px;background:linear-gradient(135deg,#ffd89b,#ff6b6b);display:flex;align-items:center;justify-content:center;color:#fff;font-size:40px;font-weight:700;box-shadow:var(--shadow)}
